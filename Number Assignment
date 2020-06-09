@@ -1,0 +1,27 @@
+write a program that does the following: 
+  
+  Do the following three times: 
+  Ask the user to input a positive integer value
+  Convert the user input to an integer and save the value in a variable.
+  
+  Add 20 to each of the three numbers and print this new value for each to the console. 
+  
+  The output should look something like Twenty added to the numbers you entered gives us 24, 73 and 42.
+=end 
+
+puts  "--------------"
+puts "| user's input |"
+puts  "--------------"
+#user's input 
+puts "Enter a positive number"
+user_1input = gets.chomp.to_i
+puts "Enter another positive number"
+user_2input = gets.chomp.to_i
+puts "Enter third positive number"
+user_3input = gets.chomp.to_i
+
+# Adds 20 to user's input 
+user_1input += 20
+user_2input += 20
+user_3input += 20
+puts "Twenty added to the numbers you entered gives us #{user_1input}, #{user_2input}, #{user_3input}." 
